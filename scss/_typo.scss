@@ -23,12 +23,16 @@
  * Écran large : 800px et +
  */
 
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans:wght@100..900&display=swap');
+
 h1,
 .h1,
 h2,
 h3,
 h4 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Bebas New', sans-serif;
 }
 
 body {

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* Typos importées */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 /* Feuilles de styles */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -7,6 +10,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans:wght@100..900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -430,12 +435,13 @@ abbr[title]:hover {
  *
  * Écran large : 800px et +
  */
+/* Polices */
 h1,
 .h1,
 h2,
 h3,
 h4 {
-  font-family: Roboto, sans-serif;
+  font-family: "Bebas New", sans-serif;
 }
 
 body {
@@ -578,9 +584,14 @@ header .inner {
 
 h1 {
   font-size: 110px;
-  font-family: Bayon;
+  font-family: "Fjalla One", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: -1px;
   color: #f35e3e;
   font-weight: 100;
+}
+
+p {
+  max-width: 1200px;
 }
 
 .haku {
@@ -589,6 +600,10 @@ h1 {
 
 .poster {
   width: 50%;
+}
+
+footer {
+  background-color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

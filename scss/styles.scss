@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* Typos importées */
+// @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 /* Feuilles de styles */
 @import '_normalize';
 @import '_utilitaires';
@@ -46,9 +51,14 @@ header {
 
 h1 {
     font-size: 110px;
-    font-family: Bayon;
+    font-family: 'Fjalla One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -1px;
     color: #f35e3e;
     font-weight: 100;
+}
+
+p {
+    max-width: 1200px;
 }
 
 .haku {
@@ -57,4 +67,8 @@ h1 {
 
 .poster {
     width: 50%;
+}
+
+footer {
+    background-color: black;
 }
