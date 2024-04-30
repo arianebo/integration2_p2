@@ -2,8 +2,9 @@
 
 /* Typos importées */
 // @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Feuilles de styles */
 @import '_normalize';
@@ -13,6 +14,10 @@
 
 :root {
     box-sizing: border-box;
+}
+
+body {
+    background-color: $beige;
 }
 
 header {
@@ -36,14 +41,22 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 0;
 }
 
 .menu__item {
-    color: white;
+    color: $white;
     list-style: none;
+}
+
+.item__lien:link, .item__lien:visited {
+    color: $white;
+}
+
+.item__lien:hover, .item__lien:active {
+    color: $lightRed;
 }
 
 main {
@@ -51,18 +64,39 @@ main {
     margin: 0 auto;
 }
 
+.fil__ariane {
+    margin: 0;
+}
+
+.fil__lien {
+    color: $black;
+}
+
+.fil__lien:link, .fil__lien:visited {
+    color: $black;
+}
+
+.fil__lien:hover, .fil__lien:active {
+    color: $lightRed;
+}
+
 h1 {
     font-size: 110px;
     font-family: 'Fjalla One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: -1px;
-    color: #f35e3e;
+    color: $lightRed;
     font-weight: 100;
     padding-bottom: 0;
     margin: 0;
 }
 
+.sous-titre {
+    margin-top: -4.5rem;
+}
+
 h2 {
     margin: 0;
+    font-weight: 400;
 }
 
 p {
@@ -71,12 +105,13 @@ p {
 
 .citation {
     background-color: $lightBlack;
-    color: white;
+    color: $white;
     padding: 4rem 2rem;
     border-radius: 2rem;
 }
 
 .haku {
+    float: left;
     width: 90%;
 }
 
