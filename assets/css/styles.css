@@ -544,6 +544,72 @@ h4 {
     font-size: 2.2rem;
   }
 }
+/*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
+@media (min-width: 600px) {
+  .conteneur {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+    /* Grille 12 colonnes en arrière-plan - Mettre en commentaires après usage */
+  }
+}
+/*** Conteneur flex utile autant pour l'écran étroit que l'écran large ***/
+.flxRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* valeur par défaut */
+}
+
+/*** Classes pour dimensionner les blocs sur l'écran large ***/
+@media (min-width: 600px) {
+  /*** Classe de base pour l'intégration en flexbox ***/
+  .rangee {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* valeur par défaut */
+  }
+  .cols_1_de_12 {
+    flex-basis: 6.5%;
+  }
+  .cols_2_de_12 {
+    flex-basis: 15%;
+  }
+  .cols_3_de_12 {
+    flex-basis: 23.5%;
+  }
+  .cols_4_de_12 {
+    flex-basis: 32%;
+  }
+  .cols_5_de_12 {
+    flex-basis: 40.5%;
+  }
+  .cols_6_de_12 {
+    flex-basis: 49%;
+  }
+  .cols_7_de_12 {
+    flex-basis: 57.5%;
+  }
+  .cols_8_de_12 {
+    flex-basis: 66%;
+  }
+  .cols_9_de_12 {
+    flex-basis: 74.5%;
+  }
+  .cols_10_de_12 {
+    flex-basis: 83%;
+  }
+  .cols_11_de_12 {
+    flex-basis: 91.5%;
+  }
+  /* La dernière classe est commenté car inutile...
+     simplement utiliser
+     un élément block pour obtenir une largeur de 100% */
+  .cols_12_de_12 {
+    flex-basis: 100%;
+  }
+}
 :root {
   box-sizing: border-box;
 }
@@ -578,8 +644,9 @@ header .inner {
   list-style: none;
 }
 
-.textes {
+main {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -588,14 +655,27 @@ h1 {
   letter-spacing: -1px;
   color: #f35e3e;
   font-weight: 100;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
 }
 
 p {
   max-width: 1200px;
 }
 
+.citation {
+  background-color: #181818;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+}
+
 .haku {
-  width: 70%;
+  width: 90%;
 }
 
 .poster {

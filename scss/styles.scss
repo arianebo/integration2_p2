@@ -9,6 +9,7 @@
 @import '_normalize';
 @import '_utilitaires';
 @import '_typo';
+@import '_grille';
 
 :root {
     box-sizing: border-box;
@@ -45,8 +46,9 @@ header {
     list-style: none;
 }
 
-.textes {
+main {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -55,14 +57,27 @@ h1 {
     letter-spacing: -1px;
     color: #f35e3e;
     font-weight: 100;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 p {
     max-width: 1200px;
 }
 
+.citation {
+    background-color: $lightBlack;
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+}
+
 .haku {
-    width: 70%;
+    width: 90%;
 }
 
 .poster {
