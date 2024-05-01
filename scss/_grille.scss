@@ -81,15 +81,19 @@
     }
 }
 
-.wrapper {
+.container {
     display: grid;
-    grid-gap: 1em;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
     grid-template-areas:
-       "fil__ariane"
-       "titre"
-       "sous-titre"
-       "intro"
-       "haku"
+    "header   header   header"
+    "main     main     main"
+    "footer   footer   footer";
 }
 
 @media only screen and (min-width: 600px) {
@@ -97,10 +101,7 @@
         grid-gap: 20px;
         grid-template-columns: 120px auto 120px;
         grid-template-areas:
-            "fil__ariane fil__ariane fil__ariane"
-            "titre titre titre"
-            "sous-titre sous-titre sous-titre"
-            ". intro intro";
+            "";
 
         /* CENTRAGE */
         max-width: 1000px;
@@ -130,4 +131,16 @@
 
 .haku {
     grid-area: haku;
+}
+
+.s1-h2 {
+    grid-area: s1-h2;
+}
+
+.s1-p1 {
+    grid-area: s1-p1;
+}
+
+.s1-p2 {
+    grid-area: s1-p2;
 }
