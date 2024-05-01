@@ -120,5 +120,24 @@ p {
 }
 
 footer {
-    background-color: black;
+    background-color: $lightBlack;
+}
+
+.infolettre {
+    color: $white;
+}
+
+.footer__p {
+    color: $white;
+}
+
+.btnInfolettre {
+    background-color: $black;
+    border: 1px solid $white;
+    border-radius: 0 5px 5px 0;
+}
+
+.btnInfolettre img {
+    width: 100%;
+    padding-top: .5rem;
 }
