@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 /* Typos importées */
-// @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -59,10 +57,11 @@ header {
     color: $lightRed;
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+// .maxWidth {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 1rem;
+// }
 
 .fil__ariane {
     margin: 0;
@@ -81,17 +80,37 @@ main {
 }
 
 h1 {
-    font-size: 110px;
     font-family: 'Fjalla One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: -1px;
     color: $lightRed;
     font-weight: 100;
-    padding-bottom: 0;
-    margin: 0;
+    padding-bottom: 2rem;
+
+    @media (min-width: 600px) {
+        padding-bottom: 2rem;
+        margin: 0;
+    }
+
+    @media (min-width: 900px) {
+        letter-spacing: -1px;
+        padding-bottom: 0;
+        margin: 0;
+    }
 }
 
 .sous-titre {
-    margin-top: -4.5rem;
+    margin-top: -4rem;
+
+    @media (min-width: 600px) {
+        margin-top: -2rem;
+    }
+
+    @media (min-width: 900px) {
+        margin-top: -4.5rem;
+    }
+}
+
+.intro {
+    padding: 1rem 0;
 }
 
 h2 {
@@ -99,36 +118,113 @@ h2 {
     font-weight: 400;
 }
 
-p {
-    max-width: 1200px;
+p, h1, h2, h3 {
+   padding: 0 1rem;
 }
 
-.citation {
-    background-color: $lightBlack;
-    color: $white;
-    padding: 4rem 2rem;
-    border-radius: 2rem;
+.grille1 {
+    width: 100%;
 }
 
 .haku {
-    float: left;
-    width: 90%;
+    float: right;
+    width: 80%;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.sprites1 {
+    width: 100%;
+
+    @media (min-width: 600px) {
+        width: 70%;
+    }
+
+    @media (min-width: 900px) {
+        width: 100%;
+    }
 }
 
 .poster {
-    width: 50%;
+    width: 70%;
+}
+
+.sprites2 {
+    width: 40%;
+
+    @media (min-width: 600px) {
+        width: 60%;
+    }
+}
+
+.sprites3 {
+    width: 30%;
+
+    @media (min-width: 600px) {
+        width: 30%;
+    }
+
+    @media (min-width: 900px) {
+        width: 35%;
+    }
+}
+
+.titre2 {
+    color: $white;
+}
+
+.texte3, .texte4 {
+    padding: 0 1rem;
+}
+
+.grille3 {
+    background-color: $lightRed;
+    place-items: center;
 }
 
 footer {
     background-color: $lightBlack;
 }
 
+.footer__contenu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+}
+
 .infolettre {
     color: $white;
 }
 
+// .div__infolettre {
+//     display: block;
+// }
+
 .footer__p {
     color: $white;
+    margin-top: 0;
+}
+
+.footer_reseaux {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 48.39px;
+    padding: 1px 6px;
 }
 
 .btnInfolettre {
@@ -140,4 +236,12 @@ footer {
 .btnInfolettre img {
     width: 100%;
     padding-top: .5rem;
+    align-items: baseline;
+}
+
+.copyright {
+    text-align: center;
+    color: $white;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
