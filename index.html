@@ -8,6 +8,7 @@
 
     <link rel="icon" type="image/svg" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
@@ -92,20 +93,24 @@
 
     <footer>
         <div class="footer__contenu">
-            <img class="logo" src="assets/images/logo@2x-8.png" alt="Logo TIMzine">
-            <div>
-                <p class="footer__p">Suivez-nous sur les réseaux !</p>
-                <div class="footer_reseaux">
-                    <a href="https://facebook.com"><img src="assets/images/icone facebook.svg" alt="Facebook"></a>
-                    <a href="https://instagram.com"><img src="assets/images/icone instagram.svg" alt="Instagram"></a>
-                    <a href="https://tiktok.com"><img src="assets/images/icone tiktok.svg" alt="TikTok"></a>
-                    <a href="https://twitter.com"><img src="assets/images/icone x.svg" alt="X"></a>
+            <div class="footer__div">
+                <img class="logo" src="assets/images/logo@2x-8.png" alt="Logo TIMzine">
+                <div class="contenu__reseaux">
+                    <p class="footer__p">Suivez-nous sur les réseaux !</p>
+                    <div class="footer_reseaux">
+                        <a class="jello" href="https://facebook.com"><img src="assets/images/icone facebook.svg" alt="Facebook"></a>
+                        <a class="jello" href="https://instagram.com"><img src="assets/images/icone instagram.svg" alt="Instagram"></a>
+                        <a class="jello" href="https://tiktok.com"><img src="assets/images/icone tiktok.svg" alt="TikTok"></a>
+                        <a class="jello" href="https://twitter.com"><img src="assets/images/icone x.svg" alt="X"></a>
+                    </div>
                 </div>
             </div>
             <div class="div__infolettre">
                 <label for="infolettre" class="infolettre">Abonnez-vous à notre infolettre</label>
-                <input type="search" id="infolettre" name="infolettre" />
-                <button type="submit" class="btnInfolettre"><img src="assets/images/icone mail.svg" alt="Envoyer"></button>
+                <div class="contenu__infolettre">
+                    <input type="search" id="infolettre" name="infolettre" placeholder="Entrez votre courriel"/>
+                    <button type="submit" class="btnInfolettre"><img src="assets/images/icone mail.svg" alt="Envoyer"></button>
+                </div>
             </div>
         </div>
         <p class="copyright"><small>Ariane Bohémier @ Cégep de Sainte-Foy, Intégration 2, 2024</small></p>
