@@ -684,18 +684,27 @@ header .inner {
   justify-content: space-between;
 }
 
-.logo {
+.header__logo {
+  width: 25%;
+}
+@media (min-width: 600px) {
+  .header__logo {
+    width: 15%;
+  }
+}
+
+.footer__logo {
   width: 30%;
   margin: 0 auto;
 }
 @media (min-width: 600px) {
-  .logo {
+  .footer__logo {
     margin: 0 7rem 0 0;
     width: 25%;
   }
 }
 @media (min-width: 900px) {
-  .logo {
+  .footer__logo {
     width: 20%;
     padding-bottom: 0;
   }

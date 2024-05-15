@@ -32,7 +32,15 @@ header {
     }
 }
 
-.logo {
+.header__logo {
+    width: 25%;
+
+    @media (min-width: 600px) {
+        width: 15%;
+    }
+}
+
+.footer__logo {
     width: 30%;
     margin: 0 auto;
 
@@ -132,10 +140,6 @@ h2 {
 p, h1, h2, h3 {
    padding: 0 1rem;
 }
-
-// .grille1 {
-//     place-items: center;
-// }
 
 .haku {
     float: right;
