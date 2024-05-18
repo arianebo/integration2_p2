@@ -18,6 +18,8 @@ body {
     background-color: $beige;
 }
 
+// ENTÊTE
+
 header {
     background-color: $lightBlack;
     padding: 2rem 0;
@@ -37,21 +39,6 @@ header {
 
     @media (min-width: 600px) {
         width: 15%;
-    }
-}
-
-.footer__logo {
-    width: 30%;
-    margin: 0 auto;
-
-    @media (min-width: 600px) {
-        margin: 0 7rem 0 0;
-        width: 25%;
-    }
-
-    @media (min-width: 900px) {
-        width: 20%;
-        padding-bottom: 0;
     }
 }
 
@@ -77,11 +64,8 @@ header {
     color: $lightRed;
 }
 
-// .maxWidth {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     padding: 0 1rem;
-// }
+// MAIN
+// GRILLE 1
 
 .fil__ariane {
     margin: 0;
@@ -165,6 +149,8 @@ p, h1, h2, h3 {
     }
 }
 
+// GRILLE 2
+
 .poster {
     width: 70%;
     padding-top: 4rem;
@@ -211,13 +197,32 @@ p, h1, h2, h3 {
     padding: 0 1rem;
 }
 
+// GRILLE 3
+
 .grille3 {
     background-color: $lightRed;
     place-items: center;
 }
 
+// PIED DE PAGE
+
 footer {
     background-color: $lightBlack;
+}
+
+.footer__logo {
+    width: 30%;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+        margin: 0 7rem 0 0;
+        width: 25%;
+    }
+
+    @media (min-width: 900px) {
+        width: 20%;
+        padding-bottom: 0;
+    }
 }
 
 .footer__contenu {
@@ -260,15 +265,17 @@ footer {
 }
 
 .contenu__reseaux {
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin: 0 auto;
 
     @media (min-width: 600px) {
         margin: 0;
+        padding-top: 0;
     }
 
     @media (min-width: 900px) {
         margin: 0 auto;
+        padding-top: 0;
     }
 }
 
@@ -288,6 +295,7 @@ footer {
 
 label {
     display: block;
+    padding-bottom: 16px;
 }
 
 .infolettre {
